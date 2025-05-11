@@ -22,25 +22,25 @@ export class Ship extends SpaceObject {
     this.redraw();
 
     window.addEventListener('keydown', (event) => {
-      if (event.key === 'ArrowLeft') {
+      if (event.key === 'ArrowLeft' || event.key === 'a') {
         this.isRotating = -0.03;
       }
-      if (event.key === 'ArrowRight') {
+      if (event.key === 'ArrowRight' || event.key === 'd') {
         this.isRotating = 0.03;
       }
-      if (event.key === 'ArrowUp') {
+      if (event.key === 'ArrowUp' || event.key === 'w') {
         this.isAccelerating = 0.25;
       }
     });
 
     window.addEventListener('keyup', (event) => {
-      if (event.key === 'ArrowLeft') {
+      if (event.key === 'ArrowLeft' || event.key === 'a') {
         this.isRotating = 0;
       }
-      if (event.key === 'ArrowRight') {
+      if (event.key === 'ArrowRight' || event.key === 'd') {
         this.isRotating = 0;
       }
-      if (event.key === 'ArrowUp') {
+      if (event.key === 'ArrowUp' || event.key === 'w') {
         this.isAccelerating = 0;
       }
       if (event.key === ' ') {
