@@ -11,14 +11,32 @@ body {
   background-color: lightgray;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 #app {
+  position: relative;
 }
 
 #canvas {
   background-color: white;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+
+}
+
+#help {
+  display: flex;
+  gap: 1em;
+}
+
+#help .help-item {
+}
+
+#help .key {
+  display: inline-block;
+  background-color: white;
+  padding: 0 0.25em;
+  border-radius: 0.25em;
+  border: solid 1px darkgray;
 }
